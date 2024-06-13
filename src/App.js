@@ -1,5 +1,6 @@
 import './App.css';
 import analyzeImage from './functions/azure-image-analysis';
+import generateImage from './functions/azure-image-generation';
 import React, { useState } from 'react';
 
 function App() {
@@ -7,6 +8,10 @@ function App() {
   const [textInputValue, setTextInputValue] = useState('');
   const [displayImage, setDisplayImage] = useState(null); 
   const [caption, setCaption] = useState('');
+
+  function handleGenerate() {
+    generateImage();
+  }
 
   async function handleAnalyze(imageUrl) {
     if (!textInputValue) {
@@ -37,13 +42,13 @@ function App() {
 
      <div>
        <button onClick={handleAnalyze} className="button" type="generate">Analyze</button>
-       <button className="button" type="analyze">Generate</button>
+       <button onClick={handleGenerate} className="button" type="analyze">Generate</button>
      </div>
 
      {displayImage && (
        <div className="results">
-          <p className="caption"><strong>Caption:</strong> {`This is likely ${caption}`} </p>
           <img src={displayImage} alt="Analyzed" className="analyzed-image" />
+          <p className="caption"><strong>Result:</strong> {`This is likely ${caption}`} </p>
        </div>
      )}
 
