@@ -4,8 +4,8 @@ const { AzureKeyCredential } = require('@azure/core-auth');
 // Load the .env file if it exists
 // require("dotenv").config();
 
-const endpoint = process.env['VISION_ENDPOINT'] || 'https://cloud-ai-vision.cognitiveservices.azure.com/';
-const key = process.env['VISION_KEY'] || '467ab051f16b4c8c81d2b063bef3f6b3';
+const endpoint = process.env['VISION_ENDPOINT'] || '';
+const key = process.env['VISION_KEY'] || '';
 const credential = new AzureKeyCredential(key);
 
 const client = createClient(endpoint, credential);

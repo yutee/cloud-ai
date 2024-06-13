@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import { response } from "../api/response";
-const OPENAI_API_KEY = 'sk-proj-az1C8gOSHQF6oy9RjFMYT3BlbkFJ2nFPWX969fv75eZRhm11';
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY || '';
 
 const openai = new OpenAI({
   apiKey: OPENAI_API_KEY,
