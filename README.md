@@ -1,6 +1,4 @@
-## Exploring Microsoft Azure AI Capabilities Using React, Github Actions, Azure Static Apps and Azure AI
-
-In my quest to learn and gain a solid grasp of Microsoft Azure, I have been spending a lot of time lately on the Microsoft Learn platform. Eventually, I stumbled upon a challenge that involves using Azure AI computer vision capabilities leveraging Azure AI Vision and Azure OpenAI cognitive services to integrate image analyses and generation features to your product. 
+## Exploring Microsoft Azure AI Capabilities Using React, Github Actions, Azure Static Apps and Azure AI 
 
 Lately, I've been dedicated to learning Microsoft Azure, and I've been using the Microsoft Learn platform extensively. I recently came across a challenge that requires utilizing Azure AI computer vision capabilities, specifically Azure AI Vision and Azure OpenAI cognitive services, to integrate image analysis and generation features into a product.
 
